@@ -1,4 +1,4 @@
-// Importar Three.js como módulo
+// Importar Three.js como módulo jb
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.146.0/build/three.module.js';
 
 // Configuración inicial de la escena
