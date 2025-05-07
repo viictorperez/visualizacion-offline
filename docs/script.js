@@ -1,4 +1,5 @@
-// script.js
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.146.0/build/three.module.js';
+import Papa from 'https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js';
 
 // Configuración inicial de la escena Three.js
 const scene = new THREE.Scene();
@@ -35,7 +36,7 @@ document.getElementById('file-input').addEventListener('change', (event) => {
                 });
 
                 // Tomar solo el último dato
-                const lastRow = results.data[results.data.length - 2]; // -2 para ignorar la línea en blanco
+                const lastRow = results.data[results.data.length - 2];
                 const direction = parseFloat(lastRow.direccion);
                 const azimut = parseFloat(lastRow.azimut);
                 const maxRange = 1000; // Rango máximo en metros
@@ -67,3 +68,4 @@ function animate() {
     renderer.render(scene, camera);
 }
 animate();
+
