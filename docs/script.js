@@ -33,7 +33,7 @@ document.getElementById('file-input').addEventListener('change', (event) => {
                 });
 
                 // Tomar solo el último dato
-                const lastRow = results.data[results.data.length - 2]; // Ignorar la línea en blanco final
+                const lastRow = results.data[results.data.length - 2];
                 const direction = parseFloat(lastRow.direccion);
                 const azimut = parseFloat(lastRow.azimut);
                 const maxRange = 1000; // Rango máximo en metros
